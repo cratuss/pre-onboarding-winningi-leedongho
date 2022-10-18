@@ -1,34 +1,43 @@
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
-import { FiUser, FiClipboard, FiSettings, FiPower } from 'react-icons/fi';
+import { FiUser, FiClipboard, FiSettings, FiPower, FiArrowLeft } from 'react-icons/fi';
+import { useState } from 'react';
 
 const Navigation = () => {
+  const [navMinimal, setNavMinimal] = useState(false);
+
   const navigate = useNavigate();
 
   const clickHandler = () => {
     navigate('/');
   };
 
+  const navSlide = () => {
+    setNavMinimal(!navMinimal);
+  };
+
   return (
-    <NavigationBlock>
+    <NavigationBlock style={{ width: navMinimal ? '5%' : '18%' }}>
       <UserBolock>
         <FiUser />
-        <Link to='bookableList'>user1</Link>
+        {!navMinimal && <span>user1</span>}
       </UserBolock>
+      <SlideBlock onClick={() => navSlide()}>
+        <FiArrowLeft />
+      </SlideBlock>
       <ul>
-        <li>{/* <img src={companymark} alt={'companymark'} onClick={() => clickHandler()} /> */}</li>
-        <li>
+        <li onClick={() => navigate('board')}>
           <FiClipboard />
-          <Link to='bookableList'>게시판</Link>
+          {!navMinimal && <span>게시판</span>}
         </li>
-        <li>
+        <li onClick={() => navigate('setting')}>
           <FiSettings />
-          <Link to='booked'>개인설정</Link>
+          {!navMinimal && <span>개인설정</span>}
         </li>
       </ul>
       <LogBlock>
         <FiPower />
-        <Link to='bookableList'>로그아웃</Link>
+        {!navMinimal && <span>로그아웃</span>}
       </LogBlock>
     </NavigationBlock>
   );
@@ -41,17 +50,18 @@ const NavigationBlock = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   border-right: 1px solid #000000;
-  padding-left: 5vw;
   font: 2em/1 'Noto Sans KR';
-  a {
-    color: black;
+  span {
     margin-left: 10px;
   }
   li {
     display: flex;
     margin: 0 0 80px 0;
+
+    cursor: pointer;
     img {
       width: 80%;
       cursor: pointer;
@@ -59,22 +69,31 @@ const NavigationBlock = styled.div`
   }
 `;
 const UserBolock = styled.div`
-  position: fixed;
+  position: absolute;
   top: 10vh;
   display: flex;
+  cursor: default;
   svg {
     font-size: 1.3em;
   }
-  a {
+  span {
     padding-bottom: 5px;
     border-bottom: 1px solid black;
   }
 `;
 
 const LogBlock = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 10vh;
   display: flex;
+  cursor: pointer;
+`;
+
+const SlideBlock = styled.div`
+  position: absolute;
+  top: 1.5vh;
+  right: 1.5vw;
+  cursor: pointer;
 `;
 
 export default Navigation;

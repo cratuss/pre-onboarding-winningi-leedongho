@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     position: relative;
     background: #FFFFFF;
-    border: 1px solid black;
     color : #000000;
     font-family: 'Noto Sans KR', sans-serif;
   } 
