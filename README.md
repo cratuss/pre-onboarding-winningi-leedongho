@@ -115,19 +115,19 @@ npm run dev
 
 # 주요기능 시연
 
-## ✅ 메인페이지 ~ 폼 입력완료
+## ✅ 메인페이지 ~ 게시글 목록
 
 ![위닝아이 시연영상1](https://user-images.githubusercontent.com/88419431/196757726-695a2cbc-ef67-4122-9158-8856603943fa.gif)
 <br/>
 <br/>
 
-## ✅ 예약조회
+## ✅ 게시글 수정/삭제 ~ 게시글 추가
 
 ![위닝아이 시연영상2](https://user-images.githubusercontent.com/88419431/196757747-4dcdb1b6-89c4-41d4-8c0e-1bb666bb60f7.gif)
 <br/>
 <br/>
 
-## ✅ 반응형
+## ✅ 슬라이딩 사이드바, 반응형
 
 ![위닝아이 시연영상3](https://user-images.githubusercontent.com/88419431/196757765-8f8cc28b-6a0e-4410-ab00-93f110e048c2.gif)
 <br/>
