@@ -13,7 +13,6 @@
     "bootstrap": "^5.2.2",
     "chart.js": "^3.9.1",
     "chartjs-plugin-datalabels": "^2.1.0",
-    "draft-js": "^0.11.7",
     "faker": "^6.6.6",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
