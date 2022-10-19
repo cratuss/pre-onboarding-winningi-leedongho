@@ -11,10 +11,6 @@ const BoardList = () => {
 
   const { boardListData, setBoardListData } = useContext(BoardContext);
 
-  useEffect(() => {
-    console.log(boardListData);
-  }, [boardListData]);
-
   return (
     <>
       <Header title={'게시판'} />
