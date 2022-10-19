@@ -1,0 +1,52 @@
+{
+  "board_data": [
+    {
+      "id": 1,
+      "title": "제목1",
+      "writer": "user1",
+      "name": "name1",
+      "time": "22.08.30",
+      "content": "content1"
+    },
+    {
+      "id": 2,
+      "title": "제목2",
+      "writer": "user2",
+      "name": "name2",
+      "time": "22.08.29",
+      "content": "content2"
+    },
+    {
+      "id": 3,
+      "title": "제목3",
+      "writer": "user3",
+      "name": "name3",
+      "time": "22.08.28",
+      "content": "content3"
+    },
+    {
+      "id": 4,
+      "title": "제목4",
+      "writer": "user4",
+      "name": "name4",
+      "time": "22.08.27",
+      "content": "content4"
+    },
+    {
+      "id": 5,
+      "title": "제목5",
+      "writer": "user5",
+      "name": "name5",
+      "time": "22.08.26",
+      "content": "content5"
+    },
+    {
+      "id": 6,
+      "title": "제목6",
+      "writer": "user6",
+      "name": "name6",
+      "time": "22.08.25",
+      "content": "content6"
+    }
+  ]
+}
