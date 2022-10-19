@@ -17,6 +17,7 @@ const BoardWrite = () => {
   const navigate = useNavigate();
 
   const { boardListData, setBoardListData } = useContext(BoardContext);
+  const { loginData, setLoginData } = useContext(LoginContext);
 
   const completeHandler = () => {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -32,6 +33,7 @@ const BoardWrite = () => {
       id: result,
       title: titleValue,
       writer: 'user3',
+      name: loginData.name,
       time: time,
       content: contentValue,
     });
