@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import React, { useContext, useEffect, useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import { useNavigate, useParams } from 'react-router-dom';
 import Header from './Header';
+import { BoardContext } from '../../App';
+import ReactQuill from 'react-quill';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
+import 'react-quill/dist/quill.snow.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useNavigate, useParams } from 'react-router-dom';
-import { BoardContext } from '../../App';
 
 const BoardModify = () => {
   const [contentValue, setContentValue] = useState('');
@@ -33,10 +33,6 @@ const BoardModify = () => {
 
   const titleChangeHandler = word => {
     setTitleValue(word.currentTarget.value);
-  };
-
-  const contentChangeHandler = word => {
-    setContentValue(word.currentTarget.value);
   };
 
   useEffect(() => {

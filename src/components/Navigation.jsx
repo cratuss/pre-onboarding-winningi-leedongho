@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FiUser, FiClipboard, FiSettings, FiPower, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { useEffect, useState, useContext } from 'react';
 import { LoginContext, MinimalContext } from '../App';
@@ -93,10 +93,6 @@ const NavigationBlock = styled.div`
     margin: 0 0 80px 0;
 
     cursor: pointer;
-    img {
-      width: 80%;
-      cursor: pointer;
-    }
   }
 `;
 const UserBolock = styled.div`

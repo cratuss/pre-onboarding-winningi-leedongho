@@ -1,9 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Footer = () => {
+  const logoUrl = 'http://www.winningi.com/theme/basic/img/common/img_flogo.svg';
+
+  const navigate = useNavigate();
+
   return (
     <FooterBlock>
-      <img src='http://www.winningi.com/theme/basic/img/common/img_flogo.svg' alt='logo'></img>
+      <img src={logoUrl} alt='logo' onClick={() => navigate('../../../')}></img>
       <address>
         Zipcode 08381 9F #908 , 285, Digital-ro, Guro-gu, Seoul, Republic of Korea
         <br />
@@ -28,6 +33,7 @@ const FooterBlock = styled.div`
     width: 153px;
     hegith: 94px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 `;
 

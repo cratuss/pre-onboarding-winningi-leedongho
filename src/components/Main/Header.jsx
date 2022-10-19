@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { UserContext, LoginContext } from '../../App';
 
 const Header = () => {

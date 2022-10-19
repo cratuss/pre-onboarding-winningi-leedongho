@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
 import { useContext, useEffect, useState } from 'react';
-import { UserContext, LoginContext } from '../../App';
+import { LoginContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 const Header = ({ title }) => {
   const { loginData, setLoginData } = useContext(LoginContext);

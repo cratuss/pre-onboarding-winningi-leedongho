@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
-import { useLinkClickHandler, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import { LoginContext, BoardContext } from '../../App';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { LoginContext, BoardContext } from '../../App';
 
 const BoardDetail = () => {
   const [data, setData] = useState('');

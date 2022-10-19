@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
+import { createContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import GlobalStyle from './GlobalStyle';
 import Navigation from './components/Navigation';
 import Main from './pages/Main';
 import Board from './pages/Board';
 import Setting from './pages/Setting';
-import { createContext, useState, useEffect } from 'react';
-import axios from 'axios';
 
 const Context = createContext({
   loginData: '',

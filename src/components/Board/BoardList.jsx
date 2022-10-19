@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import { useContext, useEffect, useState } from 'react';
-import axios from 'axios';
-import Table from 'react-bootstrap/Table';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import { BoardContext } from '../../App';
 import Header from './Header';
+import Table from 'react-bootstrap/Table';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BoardList = () => {
   const navigate = useNavigate();
@@ -32,15 +31,15 @@ const BoardList = () => {
           <tbody>
             {boardListData && (
               <>
-                {boardListData.map((el, index) => {
+                {boardListData.map((boardOne, index) => {
                   return (
-                    <tr key={index}>
+                    <tr key={boardOne + index}>
                       <td width={5}>{index}</td>
-                      <td width={500} className='click' onClick={() => navigate(`./${el.id}`)}>
-                        {el.title}
+                      <td width={500} className='click' onClick={() => navigate(`./${boardOne.id}`)}>
+                        {boardOne.title}
                       </td>
-                      <td width={100}>{el.name}</td>
-                      <td width={100}>{el.time}</td>
+                      <td width={100}>{boardOne.name}</td>
+                      <td width={100}>{boardOne.time}</td>
                     </tr>
                   );
                 })}

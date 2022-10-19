@@ -1,5 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
+import { Route, Routes } from 'react-router-dom';
 import BoardList from '../components/Board/BoardList';
 import BoardDetail from '../components/Board/BoardDetail';
 import BoardWrite from '../components/Board/BoardWrite';
