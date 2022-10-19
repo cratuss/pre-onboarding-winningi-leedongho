@@ -1,7 +1,16 @@
 import styled from 'styled-components';
+import Header from '../components/Main/Header';
+import ChartArea from '../components/Main/ChartArea';
+import Footer from '../components/Main/Footer';
 
 const Main = () => {
-  return <MainBlock></MainBlock>;
+  return (
+    <MainBlock>
+      <Header />
+      <ChartArea />
+      <Footer />
+    </MainBlock>
+  );
 };
 
 const MainBlock = styled.div`

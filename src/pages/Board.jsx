@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Board = () => {
-  return <BoardBlock>board</BoardBlock>;
+  return <BoardBlock></BoardBlock>;
 };
 
 const BoardBlock = styled.div``;
