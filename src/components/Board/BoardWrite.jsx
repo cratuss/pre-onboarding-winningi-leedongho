@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
-import { BoardContext } from '../../App';
+import { BoardContext, LoginContext } from '../../App';
 
 const BoardWrite = () => {
   const [contentValue, setContentValue] = useState('');
